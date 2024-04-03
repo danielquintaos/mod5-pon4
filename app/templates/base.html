@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dobot Control System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="https://unpkg.com/htmx.org"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/dashboard">Log Dashboard</a></li>
+            {% if dobot_connected %}
+                <li><a href="/control">Robot Control</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

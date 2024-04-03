@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Robot Control</h2>
+<form method="POST" hx-post="/send-command" hx-target="#command-status" hx-swap="outerHTML">
+    <label for="command">Command:</label>
+    <input type="text" id="command" name="command" required>
+    <button type="submit">Send Command</button>
+</form>
+<div id="command-status"></div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Command Logs</h2>
+<div id="log-list">
+    {% for log in logs %}
+        <div class="log-entry">
+            Command: {{ log['command'] }} <br>
+            Timestamp: {{ log.get('timestamp', 'Unknown') }}
+        </div>
+    {% else %}
+        <div>No logs found.</div>
+    {% endfor %}
+</div>
+{% endblock %}

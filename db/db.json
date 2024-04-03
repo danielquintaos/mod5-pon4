@@ -1,0 +1,8 @@
+{
+    "_default": {
+        "1": {"command": "MoveTo X:100 Y:100 Z:100", "timestamp": "2024-04-01 10:00:00"},
+        "2": {"command": "SetGripper Open", "timestamp": "2024-04-01 10:05:00"},
+        "3": {"command": "SetGripper Close", "timestamp": "2024-04-01 10:10:00"},
+        "4": {"command": "MoveTo X:200 Y:200 Z:200", "timestamp": "2024-04-01 10:15:00"}
+    }
+}
